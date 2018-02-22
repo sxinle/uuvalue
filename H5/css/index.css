@@ -1,0 +1,256 @@
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+.rotate {
+	animation: rotate 20s infinite linear;
+}
+
+@keyframes move {
+	0% {
+		top: -10px;
+	}
+	50% {
+		top: 20px;
+	}
+	100% {
+		top: -10px;
+	}
+}
+
+.move {
+	animation: move 5s infinite linear;
+}
+
+@keyframes databg {
+    0% {
+        background-position: 0 top;
+        background: url(../images/home6.jpg) no-repeat #000;
+    }
+    50% {
+        background-position:  60% top;
+    }
+    60% {
+        background-position: left top;
+        background: url(../images/home6.jpg) no-repeat #000;
+
+    }
+    100% {
+        background-position: left top;
+    }
+}
+.dv {
+    width: 100%; height: 100%; position: absolute;
+    background: url(../images/home2.gif) no-repeat #000;
+    animation: databg 3s linear;
+}
+
+@keyframes anibg {
+    0% {
+        background-size: 120%;
+        -webkit-background-size: 120%;
+    }
+    100% {
+        background-size: 100%;
+        -webkit-background-size: 100%;
+    }
+}
+
+@-webkit-keyframes anibg {
+    0% {
+        background-size: 120%;
+        -webkit-background-size: 120%;
+    }
+    100% {
+        background-size: 100%;
+        -webkit-background-size: 100%;
+    }
+}
+.anibg3 {
+    width: 100%; height: 100%; position: absolute;
+    background: url(../images/home3.jpg) no-repeat #000;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    animation: anibg 4s linear;
+    -webkit-animation: anibg 4s linear;
+}
+.anibg4 {
+    width: 100%; height: 100%; position: absolute;
+    background: url(../images/home4.jpg) no-repeat #000;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    animation: anibg 4s linear;
+    -webkit-animation: anibg 4s linear;
+}
+.anibg5 {
+    width: 100%; height: 100%; position: absolute;
+    background: url(../images/home5.jpg) no-repeat #000;
+    background-size: 100%;
+    -webkit-background-size: 100%;
+    animation: anibg 4s linear;
+    -webkit-animation: anibg 4s linear;
+}
+/*
+ * page layout
+ * */
+.axis {
+	width: 100%;
+	margin-top: 120px;
+}
+.axis-line {
+	position: absolute; left: 50%; bottom: 30px; width: 2px; height: 65%; background: #fff;
+}
+.axis .aerolite {
+	position: relative;
+	background: url(../images/aerolite.png) no-repeat center;
+	background-size: 80%;
+	width: 120px;
+	height: 120px;
+	margin: auto;
+	text-align: center;
+	color: #fff;
+	line-height: 110px;
+}
+.axis .aerolite {
+	font-size: 20px;
+	font-weight: bold;
+	text-shadow: 0 0 5px #000;
+}
+.axis label {
+	font-size: 14px;
+	display: block;
+	color: #fff;
+	position: relative;
+	text-shadow: 0 0 5px #000;
+}
+.axis label:nth-child(odd) {
+	text-align: right;
+	right: 50%;
+	background: url(../images/axis-scale.png) no-repeat right;
+	padding-right: 20px;
+	margin-top: 20px;
+}
+.axis label:nth-child(even) {
+	text-align: left;
+	left: 50%;
+	background: url(../images/axis-scale.png) no-repeat left;
+	padding-left: 20px;
+	margin-top: 20px;
+}
+
+.win-con1,
+.win-con2 {
+	width: 90%; margin-top: 150px; margin-left: auto; text-align: center; position: relative; display: table;
+}
+.win-con1 > div,
+.win-con2 > div {
+	width: 45%; float: left;line-height: 120px; font-size: 14px; color: #fff;
+    border: 1px solid #000;
+}
+.win-con1 > div:nth-child(1) {
+	height: 230px;
+	background: url(../images/produce-01.gif) no-repeat;
+	background-position: 20% 40%;
+}
+.win-con1 > div:nth-child(2) {
+	height: 130px;
+	background: #83CC2B;
+}
+.win-con1 > div:nth-child(3) {
+	height: 230px;
+	position: relative;
+	top: 0px;
+	background: url(../images/produce-02.jpg) no-repeat;
+	background-position: 40% 30%;
+}
+.win-con1 > div:nth-child(4) {
+	height: 130px;
+	background: #27A9F4;
+	position: relative;
+	top: -130px;
+}
+
+.win-con2 > div:nth-child(1) {
+	height: 130px;
+	background: #83CC2B;
+}
+.win-con2 > div:nth-child(2) {
+	height: 230px;
+	position: relative;
+	top: 0px;
+	background: url(../images/produce-04.jpg) no-repeat;
+	background-position: 40% 30%;
+}
+.win-con2 > div:nth-child(3) {
+	height: 230px;
+	background: url(../images/produce-03.jpg) no-repeat;
+	background-position: 25% 50%;
+	position: relative;
+	top: -100px;
+}
+.win-con2 > div:nth-child(4) {
+	height: 130px;
+	background: #9933cc;
+}
+.dataview {
+	background: url(../images/home6-yuan.gif) no-repeat;
+	background-size: cover;
+	position: relative;
+	z-index: 1;
+	margin: auto;
+	width: 248px;
+	height: 248px;
+    line-height: 248px;
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+}
+
+
+
+.h5-title-map {
+	position: absolute; top: -83px; z-index: 1; width: 100%; text-align: center;
+}
+.h5-title-triangle-s {
+	position: absolute; top: -2px; z-index: 2; width: 100%; text-align: center;
+}
+.h5-title-triangle-b {
+	position: absolute; top: 0px; z-index: 3; width: 100%; text-align: center;
+}
+.h5-title-triangle-l {
+	position: absolute; top: 15px; z-index: 4; width: 100%; text-align: center;
+}
+.h5-title-text {
+	position: absolute; top: 46px; z-index: 5; width: 100%; text-align: center;
+}
+.h5-title-text span {
+	font-size: 18px; color: #fff;
+}
+.h5-con {
+	width: 90%; margin: auto; margin-top: 100px; text-align: center;
+}
+.h5-bottom {
+	position: absolute; bottom: -20px; width: 100%; text-align: center;
+}
+
+
+.icon-square {
+	width: 50%; text-align: center; margin: auto; margin-top: 20px; float: left; text-align: center;
+}
+.icon-square div {
+	width: 88px; height: 88px; padding-top: 5px; text-align: center; color: #fff; font-size: 48px; line-height: 88px; border: 1px solid rgba(255,255,255,.5); border-radius: 28px; margin: auto; margin-bottom: 5px;
+}
+.icon-square:hover div {
+    background: rgba(255,255,255,.2);
+}
+/*.icon-square:hover span {
+    animation: rotate .5s linear;
+}*/
+.icon-square h5 {
+    color: #eee; margin: auto; font-weight: inherit; font-size: 12px;
+}
