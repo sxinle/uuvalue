@@ -10,6 +10,8 @@ body,
 
 body {
 	font-family: "Microsoft YaHei", "Open Sans", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 	font-size: 15px;
 	color: #5F5F5F;
 	line-height: 1.6;
@@ -435,7 +437,9 @@ section .values i:hover {
 .p-0 .col-xs-4 {
 	padding: 0px;
 }
-
+.section4 {
+	padding: 80px 0;
+}
 /* mouse grab icon */
 .grabbing {
 	cursor: url(grabbing.png) 8 8, move;
@@ -1051,6 +1055,9 @@ div[class*="col-"]>.form-group {
 .contact div.col-md-3 {
 	padding: 15px 0;
 }
+.contact .col-xs-4:nth-child(5) {
+	clear: both;
+}
 .contact .vira-card {
 	background-color: #f8f8f8;
 	padding: 35px 0;
@@ -1138,4 +1145,121 @@ div[class*="col-"]>.form-group {
 }
 .f18 {
 	font-size: 30px;
+}
+
+@media screen and (max-width: 768px) {
+	.hero-heading {
+		font-size: 42px !important;
+	}
+}
+
+/* -------------------
+ * response mobile
+ * -------------------*/
+@media screen and (max-width: 414px) {
+	html, body, #wrapper {
+		height: auto;
+	}
+	.parallax-window {
+		height: 400px;
+		background-position: 30% !important;
+	}
+	.hero-unit-fullscreen .hero-content {
+		top: 2.5em;
+	}
+	.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		background: transparent;
+		color: rgba(255,255,255,.6);
+	}
+	.hero-unit-fullscreen .lead {
+		margin-bottom: 40px;
+	}
+	a.download {
+		background: transparent;
+		padding: 8px 30px;
+	}
+	section {
+		padding-bottom: 0;
+		padding-top: 40px;
+	}
+	section .heading {
+		margin: 0 0 30px 0;
+	}
+	#fh5co-portfolio-list li.one-third {
+		width: 100% !important;
+	}
+	#fh5co-portfolio-list li.two-third {
+		display: none;
+	}
+	.section3 .container {
+		width: 100% !important;
+		max-width: 100% !important;
+	}
+	.sec3-con2-con {
+		padding: 0 40px;
+	}
+	.section4 {
+		padding: 0;
+	}
+	.about-img {
+		display: none;
+	}
+	.heading-left {
+		text-align: center;
+	}
+	section .heading-left:after {
+		content: '';
+		display: block;
+		border-top: 2px solid #008ED6;
+		width: 60px;
+		margin: 0 auto;
+		margin-top: 30px;
+	}
+	.about-content {
+		padding: 0 20px;
+		padding-bottom: 40px;
+	}
+	.contact .vira-card .vira-card-content h3 {
+		margin-bottom: 30px;
+		font-size: 20px;
+	}
+	.contact .row {
+		background: #f1f1f1;
+		padding: 5px 0;
+	}
+	.contact .col-xs-4 img {
+		zoom: .5;
+	}
+	.contact .col-xs-4 {
+		text-align: center;
+		border: 5px solid #f1f1f1;
+		background: #fff;
+		height: 72px;
+	}
+	.contact .col-xs-4:nth-child(4) {
+		clear: both;
+	}
+	.contact .col-xs-4:nth-child(5) {
+		clear: none;
+	}
+	.contact .vira-card,
+	.contact .vira-card:hover{
+		margin-bottom: 15px;
+		padding: 20px 0;
+	}
+	.contact .row {
+		background: #fff;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.hero-unit-fullscreen .hero-heading {
+		font-size: 36px !important;
+	}
+	.hero-unit-fullscreen .hero-content {
+		top: 2.5em;
+	}
+	a.download {
+		padding: 6px 30px;
+	}
 }
